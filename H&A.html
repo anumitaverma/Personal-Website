@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link href="ha.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+
+
+<title>Haight & Ashburry</title>
+</head>
+
+<body>
+<a href="travel.html"><div class="home"></div></a>
+<!--<div class='pin1'></div>
+<div class='pin2'></div>-->
+<div class='top_strip'></div>
+<div class='midd_strip'>
+<h2>Haight & Ashburry</h2>
+</div>
+<div class='big_im'>
+<div class='left_but' onclick="plusDivs(-1)"></div>
+<div class='image'>
+<img id='flip' class='mySlides w3-animate-fading' src="Haight_Ash/IMG_2805.JPG" />
+<img class='mySlides w3-animate-fading' src="Haight_Ash/IMG_2828.JPG" />
+
+<img id='flip' class='mySlides w3-animate-fading' src="Haight_Ash/IMG_2826.JPG"/>
+<img id='shift' class='mySlides w3-animate-fading' src="Haight_Ash/IMG_5970.JPG" />
+
+<img id='flip-s' class='mySlides w3-animate-fading' src="Haight_Ash/IMG_5974.JPG" />
+
+</div>
+
+
+<div class='right_but' onclick="plusDivs(1)"></div>
+
+</div>
+
+<div id='stars'>
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" />
+  <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+  <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+</div>
+<div class='text'>
+
+We all know that San Francisco is the city where the hipster culture began. Of the many things which San Francisco City has been able to preserve, Haight and Ashubrry’s architecture and culture happen to be one. Although the hippie neighborhood spans across several blocks, Haight and Ashburry is the most popular intersection. One of the other reasons why people go there is, of course, to experience the culture but also  for the Ameoba Music store which has the largest collection of records (which are unfortunately so uncommon now!) from around the world and for almost all genres. I was actually able to find a lot of Indian music but too bad I couldn’t purchase any as they were really $$$ ( also because I don’t own a record player). But for those who are into records and have a collections, this music store is the place to go. Also- while you’re at it, don’t forget to go to the Ben & Jerry’s ice cream shop. Mmm, thinking about it is making my mouth water. I am going to sign off, but tune in for another post next week!
+
+
+
+
+
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,4000); // Change image every 2 seconds
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+</body>
+</html>

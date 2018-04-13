@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link href="ggb.css" rel="stylesheet" type="text/css">
+
+<title>Golden Gate Bridge</title>
+</head>
+
+<body>
+<body>
+<a href="travel.html"><div class="home"></div></a>
+<!--<div class='pin1'></div>
+<div class='pin2'></div>-->
+<div class='top_strip'></div>
+<div class='midd_strip'>
+<h2>Golden Gate Bridge</h2>
+</div>
+<div class='big_im'>
+<div class='left_but' onclick="plusDivs(-1)"></div>
+<div class='image'>
+<img id='shift' class='mySlides w3-animate-fading' src="GGB/IMG_2944.jpg" />
+<img class='mySlides w3-animate-fading' src="GGB/IMG_2948.JPG"/>
+<img id='shift' class='mySlides w3-animate-fading' src="GGB/IMG_2892.jpg" />
+<img class='mySlides w3-animate-fading' src="GGB/IMG_3010.JPG" />
+<img id='shift' class='mySlides w3-animate-fading' src="GGB/IMG_2914.jpg" />
+<img class='mySlides w3-animate-fading' src="GGB/IMG_3013.JPG" />
+
+
+</div>
+
+
+<div class='right_but' onclick="plusDivs(1)"></div>
+
+</div>
+
+<div id='stars'>
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" />
+  <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+  <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+</div>
+<div class='text'>
+
+We recognize San Francisco because of the Golden Gate Bridge-painted in brick-red, she stands stall bridging the San Francisco Peninsula with the Oakland peninsula. She is one of the reasons why San Francisco is chilly all year around! Whether it is a sunny day or a foggy day, the Golden Gate Bridge never ceases to awe you. Many people say that the best way to explore to Golden Gate Bridge is by biking to it, I would thoroughly disagree! Do not take a bike, and definitely not a tandem bike to the Bridge. I did that and it was the biggest mistake because I walked the bike more than I rode it! In my opinion, the best way to explore the Bridge is to take the Muni and then to walk on the bridge. Many people take the bikes, so if you are planning to ride the bike all the way till the end of the entire bridge, then taking a bike would be a good option. But if you are planning to stop once in awhile for taking pictures, walking will be your best bet.
+
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,4000); // Change image every 2 seconds
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+</body>
+</html>

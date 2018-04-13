@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link href="martingarrix.css" rel="stylesheet" type="text/css">
+
+<title>Martin Garrix</title>
+</head>
+
+<body>
+<a href="travel2.html"><div class="home"></div></a>
+<!--<div class='pin1'></div>
+<div class='pin2'></div>-->
+<div class='top_strip'></div>
+<div class='midd_strip'>
+<h2>Martin Garrix</h2>
+</div>
+<div class='big_im'>
+<div class='left_but' onclick="plusDivs(-1)"></div>
+<div class='image'>
+<img class='mySlides w3-animate-fading' src="Martin Garix/IMG_5610.JPG" />
+<img class='mySlides w3-animate-fading' src="Martin Garix/IMG_5646.JPG"/>
+<img id='shift' class='mySlides w3-animate-fading' src="Martin Garix/IMG_5653.JPG" />
+<img id='shift' class='mySlides w3-animate-fading' src="Martin Garix/IMG_5660.JPG" />
+<img id='shift' class='mySlides w3-animate-fading' src="Martin Garix/IMG_5700.png" />
+
+
+</div>
+
+
+<div class='right_but' onclick="plusDivs(1)"></div>
+
+</div>
+
+<div id='stars'>
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" />
+  <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+  <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+</div>
+<div class='text'>
+In the 22 years of my life, I have never been to a concert and I'm glad to say that Martin Garrix was the one I began with. My best friend took me along with him to experience something which was beyond amazing. When I was younger, I used to be pretty good at knowing song lyrics’ but now with me aging even faster than the best cheese you’ve eaten.. I have become more of the person who focuses on the instrumental part of the music as opposed to the lyrical part. For people like me, EDM is probably the best thing that can ever happen. You don’t have to worry about the lyrics at all.. I am sure many of you who are reading this post have been through those situations where you need to “fake-know” the lyrics to a song and mouth it in a concert to act like you totally know the song well. You guys.. fear not! EDM has come to our rescue. I am highly indebted to all the artists who thought of EDM as a possible genre of music and a major culprit of it Martin Garrix who performed in San Francisco at the Civi Center. It had an amazing turn up (for obvious reasons *winks*) but despite that, the feeling of the music thumping through your blood and with lights piercing through your skin in every direction possible made me feel alive. I really hope all of you get a chance to go to a concert, if not an EDM concert. Check out the pictures to know how much of a blast I had!
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,4000); // Change image every 2 seconds
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+</body>
+</html>

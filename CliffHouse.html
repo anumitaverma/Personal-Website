@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link href="cliffh.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+
+
+<title>Cliff House &Land's End</title>
+</head>
+
+<body>
+<a href="travel.html"><div class="home"></div></a>
+<!--<div class='pin1'></div>
+<div class='pin2'></div>-->
+<div class='top_strip'></div>
+<div class='midd_strip'>
+<h2>Lands End &Cliff House</h2>
+</div>
+<div class='big_im'>
+<div class='left_but' onclick="plusDivs(-1)"></div>
+<div class='image'>
+<img class='mySlides w3-animate-fading' src="CliffHouse,Lands End/IMG_3017.JPG" />
+<img class='mySlides w3-animate-fading' src="CliffHouse,Lands End/IMG_3019.JPG"/>
+<img class='mySlides w3-animate-fading' src="CliffHouse,Lands End/IMG_3033.JPG" />
+</div>
+
+
+<div class='right_but' onclick="plusDivs(1)"></div>
+
+</div>
+
+<div id='stars'>
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" />
+  <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+  <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+</div>
+<div class='text'>
+<div>
+Lands End is one of the recreational parks situated in San Francisco which merges into the Ocean beach and also very near to the historical Sutro Baths. Sutro Baths was one of the largest public swimming pool built by a wealthy entrepreneur. Running along the coast line, it is a beautiful place to sit at any time of the day. The huge rocks in the picture are symbolic and known as the Lands End rocks. Conveniently placed right next to Cliff House (or the other way around… haha), dining at Cliff House is a great way to enjoy the view. Cliff House,the other favorite restaurant of mine has two dining halls- Sutro and the Bistro. The Sutro has a more formal touch to the ambience, whereas Bistro is more casual and less up-tight. The food from both the dining areas are equally good however my personal favorite dishes are: Fruitti de Marre from the Bistro and Bacon Crusted Salmon from the Sutro. Cliff House is my favorite restaurant out of the many  because this restaurant was the place which made me appreciate .. and now love sea food.</div> 
+
+<div class="space">Another restaurant, which is a mile down the road, called Beach Shallet is well known for their crab cakes and sandwiches. Even though the two restaurants are on the higher end of the expense spectrum, I definitely recommend these to everyone.. especially those who are trying to turn into a pescatarian!</div>  
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,4000); // Change image every 2 seconds
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+</body>
+</html>

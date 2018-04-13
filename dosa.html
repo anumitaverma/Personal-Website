@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link href="dosa.css" rel="stylesheet" type="text/css">
+
+<title>Dosa</title>
+</head>
+
+<body>
+<a href="travel.html"><div class="home"></div></a>
+<!--<div class='pin1'></div>
+<div class='pin2'></div>-->
+<div class='top_strip'></div>
+<div class='midd_strip'>
+<h2>Dosa</h2>
+</div>
+<div class='big_im'>
+<div class='left_but' onclick="plusDivs(-1)"></div>
+<div class='image'>
+<img class='mySlides w3-animate-fading' src="Dosa/IMG_5903.JPG" />
+<img id='shift' class='mySlides w3-animate-fading' src="Dosa/IMG_6945.JPG"/>
+<img class='mySlides w3-animate-fading' src="Dosa/IMG_5810.JPG" />
+
+</div>
+
+
+<div class='right_but' onclick="plusDivs(1)"></div>
+
+</div>
+
+<div id='stars'>
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" />
+  <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+  <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+</div>
+<div class='text'>
+
+DOSA on Fillmore is one of the two amazing India restaurants I will be advertising on my blog! When it comes to Indian food, I am peculiar with my food and DOSA has always satisfied my palates no matter what I have ordered! When I used to stay in San Francisco, my family and I went there once for lunch and ordered Dosa, what they are famous for. When I came back to San Francisco, I thought of going there once again to eat their DOSA. Turns out I ended up going there more than once! For those of you who follow me on SnapChat know that I have been DOSA probably A MILLION TIMES. Everything I have ordered thus far has been up to the mark, and I have loved every grain, every bite and every slurp of my food. In case you guys are wondering what I ordered:
+<ul>
+<li>Egg Curry with Kerala Paratha</li>
+<li>Hydrabadi Chicken Briyani</li>
+<li>Massala Dosa</li>
+<li>Prawn Uttpam</li>
+</ul>
+
+
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel,4000); // Change image every 2 seconds
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+</body>
+</html>
